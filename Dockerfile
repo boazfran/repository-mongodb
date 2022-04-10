@@ -1,5 +1,4 @@
-FROM mongo:3
-
+FROM registry.connect.redhat.com/percona/percona-server-mongodb-operator-containers
 # add current folder to Docker container
 COPY . /app
 
