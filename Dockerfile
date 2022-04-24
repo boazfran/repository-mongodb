@@ -16,5 +16,5 @@ USER 1001
 WORKDIR /app
 
 # run the mongo db 
-CMD mongod
+CMD sh start_mongodb.sh
 
