@@ -2,6 +2,8 @@ FROM registry.connect.redhat.com/percona/percona-server-mongodb-operator-contain
 
 # change to root user
 USER root
+# security updates
+RUN /usr/bin/microdnf update zlib cyrus-sasl-plain openssl-libs libxml2 glibc-minimal-langpack glibc-common rpm glibc libarchive rpm-libs
 
 # add current folder to Docker container
 RUN mkdir /app
