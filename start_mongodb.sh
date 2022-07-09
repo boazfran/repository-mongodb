@@ -1,6 +1,6 @@
 set -m
 # run mongod in the background and give it 10 seconds to start properly
-mongod &
+mongod --bind_ip_all &
 sleep 10
 # start the query plan
 cd /app && mongo --quiet ireceptor /app/scripts/create_query_plans.js
